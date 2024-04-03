@@ -5,7 +5,7 @@ on:
     types: [published]
 
 env:
-  IMAGE_NAME: gnzsnz/pgcli-docker
+  IMAGE_NAME: gnzsnz/pgcli
   PLATFORMS: linux/amd64,linux/arm64
 
 jobs:

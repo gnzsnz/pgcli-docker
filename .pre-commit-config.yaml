@@ -24,6 +24,7 @@ repos:
     rev: v0.37.0
     hooks:
       - id: markdownlint
+        args: ['--disable', 'MD013']
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.27.1
     hooks:
