@@ -6,7 +6,7 @@ COPY run-pgcli.sh /bin/run-pgcli.sh
 COPY requirements.txt /requirements.txt
 
 RUN apt-get -y update && \
-	apt-get -y install --no-install-recommends less=590-2  && \
+	apt-get -y install --no-install-recommends less  && \
 	apt-get clean && rm -rf /var/lib/apt/lists/* && \
 	pip install --no-cache-dir -r requirements.txt
 
