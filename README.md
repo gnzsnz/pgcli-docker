@@ -2,14 +2,16 @@
 
 Dockerized version of the [pgcli](http://pgcli.com/) tool for postgres.
 
-![Screenshot.gif](https://raw.githubusercontent.com/dencold/pgcli-docker/master/screencap.gif)
+![Screenshot.gif](https://raw.githubusercontent.com/gnzsnz/pgcli-docker/master/screencap.gif)
+
+This is a fork from the now unmaintained [dencold/pgcli](https://github.com/dencold/pgcli-docker)
 
 ## Quick usage
 
-1. Pull the docker image: `docker pull dencold/pgcli`
-2. Run the container: `docker run -it --rm dencold/pgcli DB_URL`
+1. Pull the docker image: `docker pull gnzsnz/pgcli`
+2. Run the container: `docker run -it --rm gnzsnz/pgcli DB_URL`
 3. Or, if you already have a postgres container, you can just do this:
-   `docker run -it --link my-postgres:postgres --rm dencold/pgcli`
+   `docker run -it --link my-postgres:postgres --rm gnzsnz/pgcli`
 
 Note that *DB_URL* is in the format of:
 
@@ -53,7 +55,7 @@ If you have one of these postgres containers already running, all you need to
 do is link the postgres container to pgcli. For example, if your postgres
 container was named `my-postgres`, you can attach pgcli with this one-liner:
 
-```docker run -it --link my-postgres:postgres --rm dencold/pgcli```
+```docker run -it --link my-postgres:postgres --rm gnzsnz/pgcli```
 
 It will determine host, port, and login details directly from the linked
 postgres container's environment variables. You should be dropped right into a
