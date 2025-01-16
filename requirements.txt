@@ -1,2 +1,2 @@
-psycopg[binary]==3.2.3
+psycopg[binary]==3.2.4
 pgcli==4.1.0
